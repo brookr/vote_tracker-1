@@ -6,7 +6,7 @@ var KittenPhoto = function(imageFile){
 
 var a = [], b = [], kitten= [];
 
-for(i=0; i<14; i++){
+for(i=0; i<15; i++){
 	a[i] = 'kitten_' + i + '.jpg';
 	b[i] = a[i];
 	kitten.push(new KittenPhoto(a[i]));
@@ -42,5 +42,8 @@ var generateNewImage = function(loserButton){
 	var elementOne = loserButton.parentElement.children[0].attributes[1].nodeValue // name of the loser
 	loserButton.parentElement.children[0].attributes[1].nodeValue = b.pop();
 }
+
+var $pText = $('p.tallyVote').text('Number of Votes ');
+$('p.tallyVote').append($pText);
 
 //Thank you Dale for your help!
