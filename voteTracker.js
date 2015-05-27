@@ -42,3 +42,5 @@ var generateNewImage = function(loserButton){
 	var elementOne = loserButton.parentElement.children[0].attributes[1].nodeValue // name of the loser
 	loserButton.parentElement.children[0].attributes[1].nodeValue = b.pop();
 }
+
+//Thank you Dale for your help!
